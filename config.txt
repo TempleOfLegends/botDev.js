@@ -1,0 +1,294 @@
+# Bot ownership
+
+
+
+# Discord ID of the owner of this bot
+owner = "205910685782245376"
+
+
+
+
+
+# Command execution
+
+
+
+# Bot default prefix
+commands.exe.prefix = "!"
+
+# Bot default suffix
+commands.exe.suffix = "!"
+
+# Make mentions an argument that is a collection of the tagged users
+commands.exe.mention_is_arg = true
+
+
+
+
+
+# Password generation
+
+
+
+# Master password bytes
+password.master.bytes = 32
+
+# Final password length
+password.final.length = 128
+
+# Password hashing algorithm
+passowrd.hash = "sha512"
+
+# Password encoding
+password.encoding = "hex"
+
+
+
+
+
+# Backup info
+
+
+
+# Interval (in milliseconds) in which the bot backs up its files.
+backup.interval = 300000
+
+# Message bot sends before a backup
+backup.msg.start = "Backing up files..."
+
+# Message bot sends before backing up a file
+backup.msg.read = "Backing up file <FILE>..."
+
+# Message bot sends when reading a file fails
+backup.msg.read.error = "Unable to read file <FILE>."
+
+# Message bot sends before writing a file
+backup.msg.write = "Writing backup file for <FILE>..."
+
+# Message bot sends when writing a backup fails
+backup.msg.write.error = "Unable to backup file <FILE>."
+
+# Message bot sends once backup is completed
+backup.msg.end = "Backup complete! <PERCENT>% of files were successfully backed up"
+
+
+
+
+# Web Console
+
+
+
+# Whether or not to use the web console
+webconsole = true
+
+# Default port. Set this to -1 to generate a port
+webconsole.port = -1
+
+# Number to add to characters in port generation hash
+webconsole.port.hash.add = 829
+
+# Minimum port number
+webconsole.port.min = 1000
+
+# Maximum port number
+webconsole.port.max = 8759
+
+
+
+
+
+# Commands
+
+
+
+# If default "help" command should be added
+commands.help = true
+
+# Custom name of default "help" command
+commands.help.name = "help"
+
+# Whether the bot should send the help page in DMs or in the channel. Set 0 to DMs, 1 for the channel the command was requested in
+commands.help.channel = 1
+
+# Message to send to user once help is sent in DMs.
+commands.help.channel.msg = "<USER>, help has been sent!"
+
+# Whether or not the bot should use an embed for the help page
+commands.help.embed = false
+
+# Color for help embed
+commands.help.embed.color = "#02c5d8"
+
+# Whether or not to specify an author for help embed
+commands.help.embed.author = true
+
+# Author for help embed
+commands.help.embed.author.author = "<BOT NAME>"
+
+# Whether or not to use an icon for help embed
+commands.help.embed.author.icon = true
+
+# Author icon for help embed
+commands.help.embed.author.icon.icon = "<BOT PROFILE PICTURE>"
+
+# Whether or not to use a title for help embed
+commands.help.embed.title = true
+
+# Title for help embed
+commands.help.embed.title.title = "Help Page"
+
+# Whether or not to use a URL for help embed
+commands.help.embed.url = false
+
+# URL for help embed
+commands.help.embed.url.url = ""
+
+# Whether or not to add a timestamp for help embed
+commands.help.embed.timestamp = true
+
+# Whether or not to add a footer for help embed
+commands.help.embed.footer = true
+
+# Footer text for help embed
+commands.help.embed.footer.text = "<BOT NAME>"
+
+# Whether or not to use a footer icon for help embed
+commands.help.embed.footer.icon = true
+
+# Footer icon for help embed
+commands.help.embed.footer.icon.icon = "<BOT PROFILE PICTURE>"
+
+# Format for multiple commands
+commands.help.format.multiple = "<PREFIX><COMMAND><SUFFIX> : <PURPOSE>\n\tUsage: <COMMAND> <HELP>\n\tPermissions: ``<PERMS>``"
+
+# What to separate multiple commands in help page with
+commands.help.join = "\n\n"
+
+# Format for one command
+commands.help.format.single = "<PREFIX><COMMAND><SUFFIX> : <PURPOSE>\n\tUsage: <COMMAND> <HELP>\n\tPermissions: ``<PERMS>``"
+
+
+
+# If default "ping" command should be added
+commands.ping = true
+
+# Custom name of default "ping" command
+commands.ping.name = "ping"
+
+# If "ping" command should use the Client.ping property, contrary to measuring the time it took to send "pong"
+commands.ping.client_ping = false
+
+# Amount of allowed decimal places in ping
+commands.ping.decimals = 2
+
+
+
+# If default "kill" command should be added
+commands.kill = true
+
+# Custom name of default "kill" command
+commands.kill.name = "kill"
+
+# Whether or not a password should be required
+commands.kill.password = true
+
+
+
+# If default "account" command should be added
+commands.account = true
+
+# Custom name of default "account" command
+commands.account.name = "account"
+
+
+
+# If default "perms" command should be added
+commands.perms = true
+
+# Custom name of default "perms" command
+commands.perms.name = "perms"
+
+
+
+
+
+# Server info
+
+
+
+# What to display when the bot is added to a server
+server.bot_join = "<OWNER>, I have been added to this server!"
+
+
+
+
+
+# Data to store about servers
+
+
+
+# Whether or not to store avatar IDs
+storage.users.avatar = true
+
+# Whether or not to store avatar urls
+storage.users.avatar.url = false
+
+# Whether or not to store usernames
+storage.users.username = true
+
+# Whether or not to store discriminators
+storage.users.disc = true
+
+# Whether or not to store whether or not the user is a bot
+storage.users.bot = true
+
+# Whether or not to store uptime
+storage.users.uptime = true
+
+# Whether or not to store user status
+storage.users.status = false
+
+
+
+
+
+# Console logs for file system
+
+
+
+# Message to send when checking for existance of a file
+log.check = "Checking for <FILE>..."
+
+# Message to send if file doesn't exist
+log.check.enoent = "Unable to find <FILE>"
+
+# Message to send if unable to check for the existance of a file
+log.check.error = "Unable to check for <FILE>"
+
+# Message to send if able to find file
+log.check.success = "Found <FILE>"
+
+
+
+# Message to send if reading file
+log.read = "Reading <FILE>..."
+
+# Message to send if file doesn't exist
+log.read.enoent = "Unable to find <FILE>"
+
+# Message to send if unable to read file
+log.read.error = "Unable to read <FILE>"
+
+# Message to send if reading of the file was successful
+log.read.success = "Successfully read <FILE>"
+
+
+
+# Message to send if writing file
+log.write = "Writing <FILE>..."
+
+# Message to send if unable to write file
+log.write.error = "Unable to write <FILE>"
+
+# Message to send if writing of the file was successful
+log.write.success = "Successfully wrote <FILE>"
